@@ -1,0 +1,24 @@
+nodes:
+  # Wazuh indexer nodes
+  indexer:
+    - name: wazuh-indexer
+      ip: 10.253.2.20
+    # - name: node-2
+    #   ip: 10.253.2.20
+    # - name: node-3
+    #   ip: 10.253.2.20
+
+  # Wazuh server nodes
+  # Use node_type only with more than one Wazuh manager
+  server:
+    - name: wazuh-manager
+      ip: 10.253.2.22
+    # node_type: master
+    # - name: wazuh-2
+    #   ip: <wazuh-manager-ip>
+    # node_type: worker
+
+  # Wazuh wazuh-dashboard nodes
+  wazuh-dashboard:
+    - name: wazuh-dashboard
+      ip: 10.253.2.23
